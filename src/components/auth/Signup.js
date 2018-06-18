@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { reduxForm, Field } from 'redux-form';
 
 class Signup extends Component {
 
@@ -11,7 +12,7 @@ class Signup extends Component {
         </fieldset>
         <fieldset>
           <label>Password</label>
-          
+
         </fieldset>
       </form>
     );
@@ -19,4 +20,4 @@ class Signup extends Component {
 
 }
 
-export default Signup;
+export default reduxForm({ form: 'signup' })(Signup);
