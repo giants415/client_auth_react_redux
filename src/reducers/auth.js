@@ -1,3 +1,5 @@
+import { AUTH_USER } from '../actions/types';
+
 const INITIAL_STATE = {
   authenticated: '',
   errorMessage: ''
