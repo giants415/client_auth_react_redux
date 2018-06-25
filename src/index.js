@@ -10,9 +10,14 @@ import App from './components/App';
 import Welcome from './components/Welcome';
 import Signup from './components/auth/Signup';
 
+const store = createStore(
+  reducers,
+  {},
+  applyMiddleware(reduxThunk)
+);
 
 ReactDOM.render(
-  <Provider store={createStore(reducers, {})}>
+  <Provider store={store}>
     <BrowserRouter>
       <App>
         <Route path="/" exact component={Welcome} />
