@@ -6,7 +6,7 @@ import * as actions from '../../actions';
 
 class Signup extends Component {
   onSubmit = (formProps) => {
-    console.log(formProps);
+    this.props.signup(formProps);
   };
 
   render() {
