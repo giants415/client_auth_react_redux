@@ -37,7 +37,6 @@ class Signup extends Component {
       </form>
     );
   }
-
 }
 
 function mapStateToProps(state)  {
