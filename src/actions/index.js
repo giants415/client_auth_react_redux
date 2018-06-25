@@ -1,5 +1,5 @@
 import { AUTH_USER } from './types';
 
-export const signup = ({ email, password }) => {
-
+export const signup = ({ email, password }) => dispatch => {
+  
 };
